@@ -1,0 +1,134 @@
+@import 'app.scss';
+
+// ---------------------DEFAULT THEME --------------------- //
+:root {
+    // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    html, body{
+        margin: 0;
+        height: 100%;
+    }
+    li{
+        list-style-type: none;
+    }
+    form{
+        display: flex;
+        flex-direction: column;  
+    }
+    input{
+        margin: 5px 0;
+    }
+    .main-content {
+        margin: 10px;
+        min-height: calc(100vh - ( 24px + 56px));
+    }
+    footer {
+        margin-top: auto;
+        
+    }
+}
+// ---------------------DEFAULT LIGHT THEME --------------------- //
+.light-theme{
+    background-color: $white;
+    color: $noir;
+    a {
+        font-weight: 500;
+        color: $link-light;
+        text-decoration: inherit;
+        &.router-link-exact-active {
+            color: $hover-light;
+          }
+    }
+    a:hover {
+        color: $hover-light;
+    }
+    a:hover {
+        color: $hover-light;
+    }
+    button {
+        @include normal;
+        background-color: $btn;
+    }
+    button:hover {
+        border-color: $hover-light;
+    }
+    input{
+        @include input;
+        background-color: $input;
+        outline-color: $hover-light;
+        color: $link-light;
+    }
+    input:hover{
+        border-color: $hover-light;
+    }
+    textarea{
+        @include input;
+        background-color: $input;
+        outline-color: $hover-light;
+        color: $link-light;
+    }
+    textarea:hover{
+        border-color: $hover-light;
+    }
+    footer{
+        background-color: $bg-light;
+    }
+}
+
+
+
+// ---------------------DEFAULT DARK THEME --------------------- //
+
+.dark-theme{
+    background-color: $noir;
+    color: $white;
+    a {
+        font-weight: 500;
+        color: $link-dark;
+        text-decoration: inherit;
+        &.router-link-exact-active {
+            color: $hover-dark;
+          }
+    }
+    a:hover {
+        color: $hover-dark;
+    }
+    a:hover {
+        color: $hover-dark;
+    }
+    button {
+        @include normal;
+        background-color: $btn-dark;
+        color: $white;
+    }
+    button:hover {
+        border-color: $hover-dark;
+    }
+    input{
+        @include input;
+        background-color: $input;
+        outline-color: $hover-dark;
+        color: $link-dark;
+    }
+    input:hover{
+        border-color: $hover-dark;
+    }
+    textarea{
+        @include input;
+        background-color: $input;
+        outline-color: $hover-dark;
+        color: $link-dark;
+    }
+    textarea:hover{
+        border-color: $hover-dark;
+    }
+     footer{
+        background-color: $bg-dark;
+    }
+}
