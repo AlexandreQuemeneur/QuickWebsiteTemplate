@@ -5,7 +5,7 @@
     <div class="theme">
       <button @click.prevent="changeTheme()" >Changer de thème</button>
     </div>
-    <HeaderComponent />
+    <HeaderComponent />  
     <div class="main-content">
       <router-view />
     </div>
@@ -48,6 +48,6 @@ export default {
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>

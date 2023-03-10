@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Footer</h1>
-    </div>
+    <footer>
+        <p class="boop">&#169; 2023 Your name, All Rights Reserved </p>
+    </footer>
 </template>
 
 <script>
@@ -11,5 +11,10 @@
 </script>
 
 <style lang="scss" scoped>
-
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+}
 </style>

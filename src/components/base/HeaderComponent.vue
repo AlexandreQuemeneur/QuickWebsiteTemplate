@@ -1,13 +1,18 @@
 <template>
-    <div>
-        <h1>Header</h1>
-    </div>
+    <header>
+        <NavComponent />
+    </header>
 </template>
 
 <script>
+import NavComponent from './NavComponent.vue';
     export default {
         name: 'HeaderComponent',
-    }
+        components: {
+            NavComponent,
+        },
+
+}
 </script>
 
 <style lang="scss" scoped>
