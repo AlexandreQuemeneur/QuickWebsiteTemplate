@@ -1,10 +1,10 @@
 
 
 <template>
-  <div :class="this.theme === 'light' ? 'light-theme' : 'dark-theme'">
-    <div class="theme">
+  <div :class="this.theme === 'light' ? 'light-theme' : 'dark-theme'" id="theme-color">
+    <!-- <div class="theme">
       <button @click.prevent="changeTheme()" >Changer de thème</button>
-    </div>
+    </div> -->
     <HeaderComponent />  
     <div class="main-content">
       <router-view />
@@ -30,20 +30,6 @@ export default {
     HeaderComponent,
     FooterComponent,
   },
-  async created(){
-    let color = local.get('theme')
-    if(color){
-      this.theme = local.get('theme')
-    }else{
-      this.theme = 'light'
-    }
-  },
-  methods:{
-        changeTheme(){
-            this.theme = this.theme === "dark" ? "light" : "dark";
-            local.set('theme', this.theme); 
-        }
-    }
 }
 </script>
 
