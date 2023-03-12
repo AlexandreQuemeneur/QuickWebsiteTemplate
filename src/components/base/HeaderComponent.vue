@@ -33,7 +33,6 @@ import local from '../../utils/local.js';
             let themeColor = document.getElementById("theme-color");
             themeColor.classList.toggle("dark-theme");
             themeColor.classList.toggle("light-theme");
-
         },
     }
 }
