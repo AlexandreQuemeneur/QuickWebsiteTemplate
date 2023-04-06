@@ -4,6 +4,7 @@
             <li><router-link to="/">Home</router-link></li>
             <li><router-link to="/about">About</router-link></li>
             <li><router-link to="/theme">Theme</router-link></li>
+            <li><router-link to="/dashboard">Dashboard</router-link></li>
         </ul>
     </nav>
 </template>
@@ -23,4 +24,5 @@ ul{
         margin-right: 10px;
     }
 }
+
 </style>
